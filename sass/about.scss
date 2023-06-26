@@ -167,11 +167,19 @@ footer {
       & .col-4 {
         margin-top: -20px;
 
+        @media (max-width:410px) {
+          width: 320px;
+        }
+
         & img {
           width: 336px;
           height: 117px;
           display: block;
           margin: auto;
+
+          @media (max-width:410px) {
+            width: 32px;
+          }
         }
 
         & p.text {
@@ -282,7 +290,6 @@ footer {
           @media (max-width:1310px) {
             // padding-left: -200x;
             margin-left: -100px;
-            display: flex !important;
 
             & input {
               padding: 12px -200px 12px 19px;
@@ -295,15 +302,29 @@ footer {
             padding-left: -100px;
           }
 
+          @media (max-width:410px) {
+            display: none !important;
+            visibility: visible;
+
+            & input {
+              width: 150px;
+              display: none;
+            }
+          }
+
           & input {
             // padding: 12px 504px 12px 19px;
-            max-width: 635px;
+            max-width: 600px;
             height: 52px;
             padding-left: 19px;
             border-radius: 100px;
             border: 1px solid rgba(170, 170, 170, 1);
             background-color: transparent;
             margin-right: 32px;
+
+            @media (max-width:410px) {
+              max-width: 150px !important;
+            }
           }
 
           & button {

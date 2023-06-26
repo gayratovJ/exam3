@@ -111,11 +111,21 @@ footer .container .row .col-3 p.num {
 footer .container .row .col-4 {
   margin-top: -20px;
 }
+@media (max-width: 410px) {
+  footer .container .row .col-4 {
+    width: 320px;
+  }
+}
 footer .container .row .col-4 img {
   width: 336px;
   height: 117px;
   display: block;
   margin: auto;
+}
+@media (max-width: 410px) {
+  footer .container .row .col-4 img {
+    width: 32px;
+  }
 }
 footer .container .row .col-4 p.text {
   padding-top: 32px;
@@ -205,7 +215,6 @@ footer .container .news .container label {
 @media (max-width: 1310px) {
   footer .container .news .container label {
     margin-left: -100px;
-    display: flex !important;
   }
   footer .container .news .container label input {
     padding: 12px -200px 12px 19px;
@@ -218,14 +227,29 @@ footer .container .news .container label {
     padding-left: -100px;
   }
 }
+@media (max-width: 410px) {
+  footer .container .news .container label {
+    display: none !important;
+    visibility: visible;
+  }
+  footer .container .news .container label input {
+    width: 150px;
+    display: none;
+  }
+}
 footer .container .news .container label input {
-  max-width: 635px;
+  max-width: 600px;
   height: 52px;
   padding-left: 19px;
   border-radius: 100px;
   border: 1px solid rgb(170, 170, 170);
   background-color: transparent;
   margin-right: 32px;
+}
+@media (max-width: 410px) {
+  footer .container .news .container label input {
+    max-width: 150px !important;
+  }
 }
 footer .container .news .container label button {
   padding: 8px 32px;
